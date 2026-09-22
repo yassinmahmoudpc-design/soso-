@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>إلى سوسو ♥</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@400;600&display=swap');
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:#090507;color:#f8e9ed}
+body{font-family:Amiri,serif;overflow-x:hidden}
+.bg{position:fixed;inset:0;background:
+radial-gradient(circle at 50% 20%,#64172f 0,#260914 28%,#0a0508 72%);
+z-index:-3}.moon{position:fixed;width:180px;height:180px;border-radius:50%;
+background:#fff2f0;box-shadow:0 0 70px #d99aaa;top:7%;left:9%;opacity:.12;z-index:-2}
+.stars{position:fixed;inset:0;z-index:-1;background-image:
+radial-gradient(#fff 1px,transparent 1px),radial-gradient(#fff 1px,transparent 1px);
+background-size:95px 95px,150px 150px;background-position:10px 20px,60px 70px;opacity:.18}
+.wrap{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:25px}
+.card{width:min(650px,100%);min-height:620px;padding:48px 28px 35px;text-align:center;
+background:rgba(22,5,12,.72);border:1px solid rgba(255,190,205,.16);border-radius:32px;
+box-shadow:0 30px 100px #000,0 0 45px rgba(130,25,55,.18);backdrop-filter:blur(13px)}
+.page{display:none;animation:show .8s ease}.page.active{display:block}
+.kicker{font-family:Cairo;font-size:12px;letter-spacing:3px;color:#c98a9b}
+h1{font-size:54px;margin:20px 0 12px;color:#f9dce4;text-shadow:0 0 25px #7d2340}
+h2{font-size:32px;margin:12px 0 25px;color:#f4cbd5}
+p{font-size:23px;line-height:2.15;margin:13px auto;max-width:560px}
+.poem{font-size:25px;line-height:2.15;color:#f5dce2}
+.line{display:block;opacity:0;animation:line 1s forwards}.line:nth-child(2){animation-delay:.5s}
+.line:nth-child(3){animation-delay:1s}.line:nth-child(4){animation-delay:1.5s}
+.line:nth-child(5){animation-delay:2s}
+button{font-family:Cairo;border:1px solid #a84261;color:#ffeaf0;background:linear-gradient(135deg,#8d2445,#4b1025);
+padding:12px 28px;border-radius:50px;font-size:15px;cursor:pointer;margin-top:25px;box-shadow:0 8px 30px #000;transition:.25s}
+button:hover{transform:translateY(-3px);box-shadow:0 12px 35px #25000e}
+.rose{font-size:54px;filter:drop-shadow(0 0 15px #b43d61);animation:float 2.5s infinite}
+.heart{font-size:48px;animation:pulse 1.8s infinite;color:#b9325b}
+.final{font-size:29px;line-height:2.1;color:#ffe2e9}
+.signature{font-family:Cairo;color:#c58a9b;font-size:14px;margin-top:30px}
+@keyframes show{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes line{to{opacity:1}}
+@keyframes pulse{50%{transform:scale(1.13)}}
+@keyframes float{50%{transform:translateY(-10px)}}
+.fall{position:fixed;top:-30px;pointer-events:none;animation:fall linear forwards;z-index:10}
+@keyframes fall{to{transform:translateY(110vh) rotate(360deg);opacity:0}}
+@media(max-width:500px){h1{font-size:43px}h2{font-size:27px}.poem,p{font-size:20px}.card{min-height:590px;padding:40px 20px}}
+</style>
+</head>
+<body>
+<div class="bg"></div><div class="moon"></div><div class="stars"></div>
+<div class="wrap"><main class="card">
+
+<section class="page active" id="p1">
+<div class="kicker">رسالة لم تُكتب على ورق</div>
+<h1>إلى سوسو...</h1>
+<div class="rose">🌹</div>
+<p>هناك أشياء لا تُقال في رسالة عادية،<br>فقلت أتركها للّيل... وللقلب.</p>
+<button onclick="go(2)">افتحي الرسالة ♥</button>
+</section>
+
+<section class="page" id="p2">
+<h2>يا سوسو...</h2>
+<div class="poem">
+<span class="line">يا أجملَ اسمٍ إذا ناديتُهُ ابتسمَ المساء،</span>
+<span class="line">ويا قلبًا إذا اقتربتُ منهُ هدأ الضجيجُ في داخلي،</span>
+<span class="line">أنتِ لستِ مجردَ شخصٍ أحبه...</span>
+<span class="line">أنتِ الحكايةُ التي أحبُّ أن تبقى بلا نهاية.</span>
+</div>
+<button onclick="go(3)">لديّ لكِ بيتٌ آخر 🌙</button>
+</section>
+
+<section class="page" id="p3">
+<div class="heart">♥</div>
+<h2>ولو سألتِني: لماذا أنتِ؟</h2>
+<div class="poem">
+<span class="line">لقلتُ: لأنكِ أنتِ.</span>
+<span class="line">لأن ضحكتكِ لها مكانٌ لا يصل إليه أحد،</span>
+<span class="line">ولأن زعلكِ يثقلُ قلبي أكثر مما تتخيلين،</span>
+<span class="line">ولأنني، مهما حاولتُ وصفكِ...</span>
+<span class="line">تظلُّ الكلماتُ أقلَّ من أن تليقَ بكِ.</span>
+</div>
+<button onclick="go(4)">آخر صفحة... 🥀</button>
+</section>
+
+<section class="page" id="p4">
+<h2>ولأنني أخطأتُ...</h2>
+<div class="poem">
+<span class="line">فحقُّكِ عليّ، يا سوسو.</span>
+<span class="line">لم يكن قصدي أن أجعلَ في قلبكِ شكًّا أو حزنًا،</span>
+<span class="line">فأنا أريدُ أن أكونَ سببَ ابتسامتكِ،</span>
+<span class="line">لا سببَ دمعةٍ تختبئُ خلفَ عينيكِ.</span>
+</div>
+<p style="color:#e9b5c2;margin-top:24px">فإن كان للحبِّ بابٌ... فأنا أطرقُه الآن معتذرًا. ♥</p>
+<button onclick="go(5)">هل تقبلين اعتذاري؟</button>
+</section>
+
+<section class="page" id="p5">
+<div class="heart">♥</div>
+<h2>لسوسو وحدها</h2>
+<div class="final">
+<p>سامحيني...</p>
+<p>فأنا لا أريد أن تنتهي أيُّ لحظةٍ بيننا بزعل.</p>
+<p>وأعدكِ أن أتعلم من كل كلمةٍ أقولها،<br>
+وأن أختارُ دائمًا ما يجعلُ قلبكِ مطمئنًا.</p>
+<p>ولو كنتِ سريعةً مثل مبابي ⚽<br>
+فأنا مستعدٌّ أجري وراكِ بالاعتذار لحد ما ترضي 😂♥</p>
+</div>
+<div class="signature">من شخصٍ يتمنى أن يرى سوسو مبتسمة دائمًا</div>
+<button onclick="flowers()">اضغطي هنا لو سامحتيني 🌹</button>
+</section>
+
+</main></div>
+<script>
+function go(n){
+ document.querySelectorAll('.page').forEach(x=>x.classList.remove('active'));
+ document.getElementById('p'+n).classList.add('active');
+ window.scrollTo(0,0);
+}
+function flowers(){
+ for(let i=0;i<55;i++){
+  let e=document.createElement('div');e.className='fall';
+  e.textContent=['🌹','♥','❤','✦'][Math.floor(Math.random()*4)];
+  e.style.left=Math.random()*100+'vw';
+  e.style.fontSize=(14+Math.random()*22)+'px';
+  e.style.animationDuration=(3+Math.random()*4)+'s';
+  document.body.appendChild(e);
+  setTimeout(()=>e.remove(),7500);
+ }
+}
+</script>
+</body>
+</html>
